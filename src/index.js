@@ -26,14 +26,14 @@ app.use(express.json());
 // app.use(morgan('combined'));
 
 // template engine
-        app.engine(
+app.engine(
     'hbs',
-        engine({
+    engine({
         extname: '.hbs', // định dạng file cho template đang sử dụng
     }),
 );
-        app.set('view engine', 'hbs');
-    app.set('views', path.join(__dirname, 'resources/views'));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'resources/views'));
 
 // Routes init
 route(app);

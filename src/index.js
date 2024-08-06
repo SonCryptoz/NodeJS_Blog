@@ -9,7 +9,7 @@ const express = require('express');
     const app = express();
 const port = 3000;
 
-const route = require('./routes');
+    const route = require('./routes');
 
 // đi tới thư mục public chứa các file tĩnh
 app.use(express.static(path.join(__dirname, 'public')));

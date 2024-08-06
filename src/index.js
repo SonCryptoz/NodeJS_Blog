@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // xử lý form submit POST để lấy dữ liệu
 app.use(
                     express.urlencoded({
-            extended: true,
+        extended: true,
     }),
 );
                     app.use(express.json());
